@@ -2298,7 +2298,7 @@ def array_dim_lengths(arr):
     if len_arr > 0:
         v0 = arr[0]
         if isinstance(v0, list):
-            retval = [len(v0)]
+            retval = [len_arr]
             retval.extend(array_dim_lengths(v0))
             return retval
     return [len_arr]
